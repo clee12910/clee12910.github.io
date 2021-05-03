@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>жизненост</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="plugin-frameworks/bootstrap.css" rel="stylesheet">
+	
+	<link href="fonts/ionicons.css" rel="stylesheet">
+	
+		
+	<link href="common/styles.css" rel="stylesheet">
+	
+	
+</head>
+<body>
+	
+	<header>
+		<div class="bottom-menu">
+			<div class="container">
+				
+				<a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+				
+				<ul class="main-menu" id="main-menu">
+					<li class="drop-down"><a href="index.html">Начало</a></li>
+					<li class="drop-down"><a href="blog.html">Статии</a></li>
+					<li class="drop-down"><a href="contact.html">Контакти</a></li>
+					<li class="drop-down"><a href="terms.html">Условия</a></li>
+					<li class="drop-down"><a href="policy.html">Декларация за поверителност</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div><!-- container -->
+		</div><!-- bottom-menu -->
+	</header>
+
+
+	<section class="">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-8 offset-md-2">
+
+					<div class="p-30 mb-30 card-view">
+						<h3 class="mt-30 mb-5"><b>Благодаря ви за вашата заявка!</b></h3>
+
+					</div>
+
+				</div>
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section>
+	
+	<!-- SCIPTS -->
+	
+	<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+	
+	<script src="plugin-frameworks/tether.min.js"></script>
+	
+	<script src="plugin-frameworks/bootstrap.js"></script>
+	
+	<script src="common/scripts.js"></script>
+
+	<div class='cookie-banner'>
+		<p>
+			Сайтът използва "бисквитки". Те ни позволяват да ви разпознаят и да получат информация за вашия потребителски опит.Продължавайки да разглеждате сайта, съгласен съм с използване на "бисквитки" на собственика на сайта в съответствие с  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политиката на бисквитките</a>
+		</p>
+		<button class='close-cookie'>&times;</button>
+	</div>
+	<script>
+		window.onload = function () {
+			$('.close-cookie').click(function () {
+				$('.cookie-banner').fadeOut();
+			})
+		}
+	</script>
+	<script>
+		let elems = document.querySelectorAll('.server-name');
+		elems.forEach((elem) => {
+			elem.innerHTML = window.location.hostname
+		})
+	</script>
+	
+</body>
+</html>
